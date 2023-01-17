@@ -7,5 +7,9 @@ namespace Certifique_se_api.Models
 {
     public class Customer
     {
+        public int CustomerID { get; set; }
+        public string CustomerName { get; set; }
+        public int CustomerCnpj { get; set; }
+        public ICollection<PresenceList> PresenceList { get; set; }
     }
 }
